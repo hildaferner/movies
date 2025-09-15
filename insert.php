@@ -17,6 +17,7 @@ if (!$result) {
     <title>Add Movie</title>
 </head>
 <body>
+    <link rel="stylesheet" href="styling.css">
     <h2>Add a New Movie</h2>
     <form action="insertdata.php" method="POST">
         <label for="mname">Name:</label>

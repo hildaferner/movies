@@ -28,6 +28,7 @@ $result = $stmt->get_result();
    
 </head>
 <body>
+    <link rel="stylesheet" href="styling.css">
     <h2>Movies</h2>
 
     <!-- Search form -->
