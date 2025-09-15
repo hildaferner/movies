@@ -1,6 +1,11 @@
 /* style.css */
 body{ background-image: url(cinema.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 background-color: #cccccc;}
+
+
 /* Table styling */
 table {
     border-collapse: collapse;
