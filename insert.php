@@ -1,9 +1,10 @@
 <?php
+// Frontend code 
+// Fetch genres for the drop down from the database
 include 'db.php';
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-// Frontend code 
-// Fetch genres for the drop down from the database
+
 $result = $link->query("SELECT gid, mgenre FROM genres");
 if (!$result) {
     die("Error fetching genres: " . $link->error);

@@ -1,8 +1,8 @@
 <?php
-// insert.php
+// Backend 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-
+//Connect to database 
 include 'db.php';
 
 // Get POST data safely
@@ -11,7 +11,7 @@ $myear    = intval($_POST['myear'] ?? 0);
 $mgenreid = intval($_POST['mgenreid'] ?? 0);
 $mrating  = intval($_POST['mrating'] ?? 0);
 
-// Basic validation
+// Validate input 
 $errors = [];
 if ($mname === '') $errors[] = "Movie name is required.";
 if ($myear < 1900 || $myear > 2100) $errors[] = "Year must be between 1900 and 2100.";
@@ -27,7 +27,7 @@ if (!empty($errors)) {
     exit;
 }
 
-// Prepare and execute insert
+// Prepare and execute insert, prepare is to make sure that the input does not damage the database 
 $stmt = $link->prepare("INSERT INTO movies (mname, myear, mgenreid, mrating) VALUES (?, ?, ?, ?)");
 if (!$stmt) {
     die("Prepare failed: " . $link->error);

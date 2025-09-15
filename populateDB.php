@@ -1,6 +1,9 @@
 <?php
+//Enable errror reporting 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
+
+//Connect to database 
 include 'db.php';
 
 // SQL to create tables
@@ -20,19 +23,19 @@ CREATE TABLE IF NOT EXISTS movies (
 );
 ";
 
-// Run multi-query (because we have 2 CREATE TABLEs)
+// Execute both CREATE TABLE statements 
 if ($link->multi_query($sql) === TRUE) {
     echo "Tables created successfully!";
 } else {
     echo "Error creating tables: " . $link->error;
 }
 
-// Add some sample genres (optional)
+// Insert sample genres, the scroll down meny wont work if we dont add genres first 
+
 $genres = ["Action", "Comedy", "Drama", "Sci-Fi", "Horror"];
 foreach ($genres as $genre) {
-    $stmt = $link->prepare("INSERT INTO genres (mgenre) VALUES (?)");
-    $stmt->bind_param("s", $genre);
-    $stmt->execute();
+    $sql = "INSERT INTO genres (mgenre) VALUES ('$genre')";
+    $link->query($sql);
 }
 
 echo "<br>Sample genres added!";
