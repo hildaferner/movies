@@ -23,12 +23,11 @@ $result = $stmt->get_result();
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="style_show.css">
     <title>Movies List</title>
    
 </head>
 <body>
-    <link rel="stylesheet" href="styling.css">
     <h2>Movies</h2>
 
     <!-- Search form -->

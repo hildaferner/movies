@@ -1,10 +1,9 @@
 /* style.css */
-body{ background-image: url(cinema.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-background-color: #cccccc;}
 
+body{background-image: url(Skärmbild\ 2025-09-15\ 174226.png);
+background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll ;}
 
 /* Table styling */
 table {
@@ -21,23 +20,15 @@ th, td {
 }
 
 th {
-    background-color: #4CAF50;
+    background-color: #a81212;
     color: white;
 }
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
-
-/* Form styling */
-form {
-    width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #fafafa;
-    font-family: Arial, sans-serif;
+tr:nth-child(odd) {
+    background-color: #b2cafc;
 }
 
 label {
@@ -46,32 +37,26 @@ label {
     font-weight: bold;
 }
 
-input[type="text"],
-input[type="number"],
-select {
-    width: 100%;
-    padding: 6px;
-    margin-bottom: 15px;
-    border: 1px solid #a81212;
-    border-radius: 4px;
-}
-
 input[type="submit"] {
     background-color: #7d95ce;
     color: white;
-    border: none;
     padding: 10px 15px;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: auto;
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #a81212;
 }
 
 h2{text-align: center;
     font-size: xx-large;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 background-color: #a81212}
+
 head{text-align: center; 
     font-size: xx-large;}
+
+
+

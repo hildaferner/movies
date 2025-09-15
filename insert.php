@@ -13,11 +13,11 @@ if (!$result) {
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="style_insert.css">
     <title>Add Movie</title>
 </head>
 <body>
-    <link rel="stylesheet" href="styling.css">
+    
     <h2>Add a New Movie</h2>
     <form action="insertdata.php" method="POST">
         <label for="mname">Name:</label>
@@ -39,7 +39,8 @@ if (!$result) {
 
         <input type="submit" value="Add Movie">
     </form>
+    <a href='showmovies.php'>View Already Added Movies</a><br>
 </body>
-<a href='showmovies.php'>View Already Added Movies</a><br>
+
 </html>
 

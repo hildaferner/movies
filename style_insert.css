@@ -1,0 +1,54 @@
+body{ background-image: url(Skärmbild\ 2025-09-15\ 174304.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll ;
+background-color: #a81212;}
+
+form {
+    width: 800px;
+    margin: 150px auto;
+    padding: 20px;
+    border: 5px ridge #10100f;
+    border-radius: 8px;
+    background-color: #f2ecd2;
+    font-family: Arial, sans-serif;
+    margin: left 400px;
+    box-shadow: yellow;
+
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #a81212;
+    border-radius: 6px;
+}
+h2{text-align: center;
+    font-size: xx-large;
+    padding:10px;
+    margin: 50px;
+    text-shadow: 2px 4px 10px rgb(241, 218, 9);
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+background-color: #a81212}
+
+head{text-align: center; 
+    font-size: xxx-large;}
+
+
+a {
+  text-align:center;
+  padding: 6px;
+  color: rgb(236, 179, 179);
+  background-color: #a81212;
+  
+}
+
+a:hover {
+  text-align:center;
+  padding: 6px;
+  color: rgb(236, 179, 179);
+  background-color: rgb(3, 16, 58);
+}
