@@ -52,11 +52,35 @@ input[type="submit"]:hover {
 
 h2{text-align: center;
     font-size: xx-large;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 4px 10px rgb(241, 218, 9);
+font-family: 'Courier New', monospace;
 background-color: #a81212}
 
 head{text-align: center; 
     font-size: xx-large;}
 
+a {
+  text-align:right;
+  padding: 6px;
+  color: rgb(236, 179, 179);
+  background-color: #a81212;
+  
+}
 
+a:hover {
+  text-align:right;
+  padding: 6px;
+  color: rgb(236, 179, 179);
+  background-color: rgb(3, 16, 58);
+}
 
+form {
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 5px ridge #10100f;
+    border-radius: 8px;
+    background-color: #f2ecd2;
+    font-family: Arial, sans-serif;
+
+}

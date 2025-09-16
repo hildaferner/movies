@@ -3,7 +3,7 @@ include 'db.php';
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// Get search query from form
+// Get search query from GET
 $search = trim($_GET['search'] ?? '');
 
 // Prepare SQL
@@ -15,7 +15,7 @@ if ($search !== '') {
 } else {
     $stmt = $link->prepare("SELECT * FROM movies");
 }
-
+//Execute and dispay results 
 $stmt->execute();
 $result = $stmt->get_result();
 ?>
@@ -41,7 +41,7 @@ $result = $stmt->get_result();
 
     <br>
 
-    <table border="1" cellpadding="5" cellspacing="0">
+    <table >
         <tr>
             <th>mid</th>
             <th>mname</th>
@@ -63,5 +63,6 @@ $result = $stmt->get_result();
             <tr><td colspan="5">No results found</td></tr>
         <?php endif; ?>
     </table>
+    <a href='insert.php'>Add another movie</a><br>
 </body>
 </html>

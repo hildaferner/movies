@@ -36,11 +36,8 @@ if (!$stmt) {
 $stmt->bind_param("siii", $mname, $myear, $mgenreid, $mrating);
 
 if ($stmt->execute()) {
-    echo " New movie added successfully!<br>";
-    echo "<a href='showmovies.php'>View Movies</a><br>";
-    echo "<a href='insert.php'>Add Another Movie</a>";
+    header("Location: showmovies.php");
+    exit(); // Always call exit after header redirect
 } else {
-    die(" Insert failed: " . $stmt->error);
+    die("Insert failed: " . $stmt->error);
 }
-?>
-
