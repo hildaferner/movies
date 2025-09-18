@@ -32,7 +32,9 @@ if (!$result) {
             <option value="">--Select Genre--</option>
             <?php while ($row = $result->fetch_assoc()): ?>
                 <option value="<?= $row['gid'] ?>"><?= htmlspecialchars($row['mgenre']) ?></option>
-            <?php endwhile; ?>
+            <?php endwhile; 
+            // please write a short justification for why you are using alternative syntax here. It's fine, but I don't think I used it in the workshops?>
+            
         </select><br><br>
 
         <label for="mrating">Rating (1-5):</label>
