@@ -18,6 +18,9 @@ if ($myear < 1900 || $myear > 2100) $errors[] = "Year must be between 1900 and 2
 if ($mgenreid <= 0) $errors[] = "You must select a valid genre.";
 if ($mrating < 1 || $mrating > 5) $errors[] = "Rating must be between 1 and 5.";
 
+// i think there is a cleaner solution. By declaring the proper data type and user input in the backend, and using "required" attribute in our html form, we do not need to collect all the error messages
+// individually. Instead, the form will tell us when something is not in order. Would you agree? If you prefer your solution tell me why :)
+
 //will state which error 
 if (!empty($errors)) {
     echo "<h3>Errors:</h3><ul>";
