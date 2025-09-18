@@ -4,7 +4,7 @@
 include 'db.php';
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-
+// ->  sends the SQL command to the database 
 $result = $link->query("SELECT gid, mgenre FROM genres");
 if (!$result) {
     die("Error fetching genres: " . $link->error);
@@ -26,7 +26,7 @@ if (!$result) {
 
         <label for="myear">Year:</label>
         <input type="number" name="myear" id="myear" min="1900" max="2100" required><br><br>
-
+<!--to create a drop down meny for the genres, --select gengre-- is a place holder-->
         <label for="mgenreid">Genre:</label>
         <select name="mgenreid" id="mgenreid" required>
             <option value="">--Select Genre--</option>
