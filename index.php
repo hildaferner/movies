@@ -32,7 +32,7 @@ if (!$result) {
             <?php while ($row = $result->fetch_assoc()): ?>
                 <option value="<?= $row['gid'] ?>"><?= htmlspecialchars($row['mgenre']) ?></option>
             <?php endwhile; 
-            // please write a short justification for why you are using alternative syntax here. It's fine, but I don't think I used it in the workshops?>
+            // Used the different syntax since im used to write while loops with : and endwhile like this in python ?>
             
         </select><br><br>
 
