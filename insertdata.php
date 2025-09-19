@@ -1,7 +1,5 @@
 <?php
 // Backend 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
 //Connect to database 
 include 'db.php';
 
@@ -24,7 +22,7 @@ if (!empty($errors)) {
     foreach ($errors as $err) {
         echo "<li>" . htmlspecialchars($err) . "</li>";
     }
-    echo "</ul><a href='insert.php'>Go Back</a>";
+    echo "</ul><a href='index.php'>Go Back</a>";
     exit;
 }
 
