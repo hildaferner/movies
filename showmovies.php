@@ -66,6 +66,6 @@ $result = $stmt->get_result();
             <tr><td colspan="5">No results found</td></tr>
         <?php endif; ?>
     </table>
-    <a href='insert.php'>Add another movie</a><br>
+    <a href='index.php'>Add another movie</a><br>
 </body>
 </html>
